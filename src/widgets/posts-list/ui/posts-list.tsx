@@ -19,7 +19,7 @@ export const PostsList = ({ posts, loadMoreItems }: Props) => {
         useWindowScroll
         data={posts}
         endReached={loadMoreItems}
-        itemContent={(index, post) => {
+        itemContent={(_, post) => {
           return <PostCard key={post.id} post={post} />;
         }}
       />
